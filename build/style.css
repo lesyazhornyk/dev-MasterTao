@@ -1,0 +1,207 @@
+/*
+Theme Name: CustomTheme
+Theme URI: https://wordpress.org/themes/CustomTheme/
+Author: the Rost team
+Author URI: http://rost.com.ua/
+Description: CustomTheme brings your site to life with immersive featured images and subtle animations. Our default theme works great in many languages, for any abilities, and on any device.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: CustomTheme
+Tags: custom-colors, custom-header, custom-menu, custom-logo, editor-style, featured-images, footer-widgets, post-formats
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+@font-face {
+  font-family: "ProximaNova";
+  src: url("./assets/fonts/ProximaNova-Light.ttf") format("trueType");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "ProximaNova";
+  src: url("./assets/fonts/ProximaNova-Regular.ttf") format("trueType");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "ProximaNova";
+  src: url("./assets/fonts/ProximaNova-Semibold.ttf") format("trueType");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "ProximaNova";
+  src: url("./assets/fonts/ProximaNova-Bold.ttf") format("trueType");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "ProximaNova";
+  color: #FFFFFF;
+  background-color: #282B38;
+}
+
+a {
+  color: #FFFFFF;
+}
+
+.container {
+  width: 100%;
+  max-width: 1164px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.btn {
+  font-weight: 600;
+}
+.btn.btn-primary {
+  background: #E58D35;
+  border-color: #E58D35;
+  font-size: 15px;
+  padding: 13px 25px;
+  border-radius: 90px;
+}
+.btn.btn-primary:focus {
+  box-shadow: none;
+}
+.btn.btn-primary:hover {
+  background-color: #89C249;
+  border-color: #89C249;
+}
+
+header {
+  padding: 25px 0 39px;
+}
+header .navbar {
+  padding: 0;
+}
+header .navbar-nav {
+  margin: 0 auto;
+}
+header .navbar-nav .nav-link {
+  color: #FFFFFF;
+}
+header .navbar-nav .nav-link:hover {
+  color: #89C249;
+}
+
+.header-logo {
+  display: inline-block;
+}
+
+.navbar-toggler {
+  width: 40px;
+  height: 40px;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: 1s;
+  position: relative;
+}
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+.navbar-toggler span,
+.navbar-toggler span:before,
+.navbar-toggler span:after {
+  cursor: pointer;
+  border-radius: 1px;
+  height: 2px;
+  width: 35px;
+  background: #FFFFFF;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  display: block;
+  content: "";
+}
+.navbar-toggler span:before {
+  top: -10px;
+}
+.navbar-toggler span:after {
+  top: 10px;
+}
+.navbar-toggler span,
+.navbar-toggler span:before,
+.navbar-toggler span:after {
+  transition: all 0.5s ease-in-out;
+}
+.navbar-toggler[aria-expanded=true] span {
+  background-color: transparent;
+}
+.navbar-toggler[aria-expanded=true] span:before,
+.navbar-toggler[aria-expanded=true] span:after {
+  top: 0;
+}
+.navbar-toggler[aria-expanded=true] span:before {
+  transform: rotate(135deg);
+}
+.navbar-toggler[aria-expanded=true] span:after {
+  transform: rotate(-135deg);
+}
+
+h1 {
+  color: blue;
+}
+
+footer {
+  height: 100px;
+  background: #89C249;
+  margin-top: auto;
+}
+
+@media (min-width: 992px) {
+  header .navbar-nav .nav-item {
+    margin-right: 20px;
+  }
+  header .navbar-nav .nav-item:last-child {
+    margin-right: 0;
+  }
+}
+@media (min-width: 1200px) {
+  header .navbar-nav .nav-item {
+    margin-right: 30px;
+  }
+}
+@media screen and (max-width: 991px) {
+  header {
+    padding: 17px 0 15px;
+  }
+  header .header-logo {
+    max-width: 126px;
+  }
+  header .navbar-nav {
+    text-align: center;
+    margin: 27px auto 41px;
+  }
+  header .nav-item:last-child .nav-link {
+    margin-bottom: 0;
+  }
+  header .nav-link {
+    font-size: 24px;
+    margin-bottom: 28px;
+    line-height: 1;
+    font-weight: 400;
+  }
+  .navbar-collapse {
+    display: flex;
+    flex-direction: column;
+    background-color: #363A4D;
+    margin: 15px -12px 0;
+  }
+  .navbar-collapse .btn {
+    margin-bottom: 60px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
