@@ -1,1 +1,5 @@
-$('.single-item').slick();
+$( document ).ready(function() {
+    $('.banner').slick({
+
+    });
+});

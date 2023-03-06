@@ -38,5 +38,12 @@ a{
             border-color: $secondary-color;
         }
     }
+    &.btn-large {
+        padding: 22px 33px;
+    }
 }
 
+.container-fluid {
+    padding: 0 50px;
+    max-width: 1920px;
+}
