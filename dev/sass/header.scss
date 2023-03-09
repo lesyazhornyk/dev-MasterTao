@@ -87,5 +87,8 @@ padding: 25px 0 39px;
 			transform: rotate(-135deg);
 		}
 	}
-	
+	.navbar-collapse {
+		background-color: $accest-background;
+		;
+	}
 }
