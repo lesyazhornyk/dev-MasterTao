@@ -1,6 +1,6 @@
 @media screen and (max-width: 991px) {
     header {
-        padding: 17px 0 15px;
+        padding: 17px 0;
         .header-logo {
             max-width: 126px;
         }
@@ -127,7 +127,16 @@
         transition: .3s;
      }  
  }
+ .form-calculation {
+    padding: 52px 30px 34px;
+ }
 
+ .label-file {
+    margin: 12px 0 6px;
+ }
+ .calculation-row .img-box {
+    display: none;
+  }
 }
 
 
