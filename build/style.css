@@ -68,6 +68,11 @@ a {
   margin: 0 auto;
 }
 
+.btn-arrow {
+  background: url("../assets/img/arrow.svg") no-repeat right center;
+  padding: 40px;
+}
+
 .btn {
   font-weight: 600;
 }
@@ -88,6 +93,10 @@ a {
 .btn.btn-large {
   padding: 22px 33px;
   width: 293px;
+}
+.btn.btn-medium {
+  padding: 22px 33px;
+  width: 253px;
 }
 
 .container-fluid {

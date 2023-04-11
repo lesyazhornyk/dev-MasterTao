@@ -17,7 +17,7 @@
         <div class="container">
             <nav class="navbar navbar-expand-lg">
                 <a href="index.html" class="header-logo">
-        <img src="assets/img/logo.svg" class="img-fluid" alt="logo">
+        <img src="assets/img/logo.svg" class="img-fluid" loading="lazy" alt="logo">
     </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span></span>
@@ -54,31 +54,42 @@
     <main class="wrapper home">
         <section class="first-screen">
             <div class="banner container-fluid">
-                <div class="banner-item" style="background-image: url(assets/img/banner-1.png);">
+                <div class="banner-item" style="background-image: url(assets/img/banner-1.png)">
                     <div class="container">
                         <div class="banner-item_title">Прямое КАРГО из Китая</div>
-                        <div class="banner-item_subtitle">Доставляем любые грузы из Китая по честной цене</div>
-                        <button class="btn btn-primary btn-large">Рассчитать стоимость</button>
+                        <div class="banner-item_subtitle">
+                            Доставляем любые грузы из Китая по честной цене
+                        </div>
+                        <button class="btn btn-primary btn-large">
+                            Рассчитать стоимость
+                            <span class="btn-arrow"></span>
+                        </button>
                     </div>
                 </div>
-                <div class="banner-item" style="background-image: url(assets/img/banner-2.png);">
+                <div class="banner-item" style="background-image: url(assets/img/banner-2.png)">
                     <div class="container">
                         <div class="banner-item_title">Выкуп товара с ТаоБао, 1688</div>
-                        <div class="banner-item_subtitle">Выкуп и доставка товаров с китайских торговых площадок. </div>
+                        <div class="banner-item_subtitle">
+                            Выкуп и доставка товаров с китайских торговых площадок.
+                        </div>
                         <button class="btn btn-primary btn-large">Рассчитать стоимость</button>
                     </div>
                 </div>
-                <div class="banner-item" style="background-image: url(assets/img/banner-3.png);">
+                <div class="banner-item" style="background-image: url(assets/img/banner-3.png)">
                     <div class="container">
                         <div class="banner-item_title">Экспресс авто доставка</div>
-                        <div class="banner-item_subtitle">Доставка автотранспортом из Китая в Украину от 15 дней, от $0,5/кг</div>
+                        <div class="banner-item_subtitle">
+                            Доставка автотранспортом из Китая в Украину от 15 дней, от $0,5/кг
+                        </div>
                         <button class="btn btn-primary btn-large">Рассчитать стоимость</button>
                     </div>
                 </div>
-                <div class="banner-item" style="background-image: url(assets/img/banner-4.png);">
+                <div class="banner-item" style="background-image: url(assets/img/banner-4.png)">
                     <div class="container">
                         <div class="banner-item_title">Прямое КАРГО из Китая</div>
-                        <div class="banner-item_subtitle">Доставляем любые грузы из Китая по честной цене</div>
+                        <div class="banner-item_subtitle">
+                            Доставляем любые грузы из Китая по честной цене
+                        </div>
                         <button class="btn btn-primary btn-large">Рассчитать стоимость</button>
                     </div>
                 </div>
@@ -96,64 +107,70 @@
                         <div class="col-md-6">
                             <div class="input-box">
                                 <label for="category">Категория товара:</label>
-                                <input type="text" id="category" name="category" placeholder="Категория товара">
+                                <input type="text" id="category" name="category" placeholder="Категория товара" />
                             </div>
                             <div class="input-box">
                                 <label for="weight">Вес груза (кг):</label>
-                                <input type="number" id="weight" name="weight" placeholder="Введите вес">
+                                <input type="number" id="weight" name="weight" placeholder="Введите вес" />
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="input-box">
                                 <label for="price">Стоимость груза:</label>
-                                <input type="number" id="price" name="price" placeholder="Введите стоимость">
+                                <input type="number" id="price" name="price" placeholder="Введите стоимость" />
                             </div>
                             <div class="input-box">
                                 <label for="volume">Объем груза (м3):</label>
-                                <input type="number" id="volume" name="volume" placeholder="Введите объем">
+                                <input type="number" id="volume" name="volume" placeholder="Введите объем" />
                             </div>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-md-6">
                             <div class="btn-box">
-                                <input type="checkbox" id="insurance" name="insurance" value="insurance">
+                                <input type="checkbox" id="insurance" name="insurance" value="insurance" />
                                 <label for="insurance">Страховка:</label>
                             </div>
                             <div class="btn-box">
-                                <input type="checkbox" id="decor" name="decor" value="decor">
+                                <input type="checkbox" id="decor" name="decor" value="decor" />
                                 <label for="decor">Таможенное оформление:</label>
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="input-box">
                                 <label for="code">Код ТН ВЭД:</label>
-                                <input type="number" id="code" name="code" placeholder="Введите код">
+                                <input type="number" id="code" name="code" placeholder="Введите код" />
                             </div>
                         </div>
 
-
                         <div class="col-12">
                             <div class="input-box">
-                                <div id="file-name">
-                                    фотография.jpeg
-                                </div>
+                                <div id="file-name">фотография.jpeg</div>
                                 <div class="file-row">
-                                    <input class="input-file" id="fileInput" name="fileInput" type="file">
+                                    <input class="input-file" id="fileInput" name="fileInput" type="file" />
                                     <label for="fileInput" class="label-file">Загрузить фото товара</label>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-6">
-                            <input type="submit" class="btn btn-primary">
+                            <button class="btn btn-primary btn-medium" type="submit">
+                                Следующий шаг
+                                <span class="btn-arrow"></span>
+                            </button>
                         </div>
                     </div>
                 </form>
                 <div class="img-box">
-                    <img src="./assets/img/calculation-img.png" class="img-fluid" alt="calculation">
+                    <img
+				src="./assets/img/calculation-img.png"
+				class="img-fluid"
+				loading="lazy"
+				alt="calculation"
+			/>
                 </div>
             </div>
         </section>
+
 
         <section class="advantages">
             <div class="container-fluid">
