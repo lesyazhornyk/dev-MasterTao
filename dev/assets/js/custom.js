@@ -1,9 +1,9 @@
-const SECTION = document.querySelectorAll('section');
-const CONTAINER_FLUID = document.querySelectorAll('container-fluid');
-console.log('CONTAINER_FLUID');
+const section = document.querySelectorAll('section');
+const container_fluid = document.querySelectorAll('container-fluid');
+console.log('container_fluid');
 
 
-CONTAINER_FLUID.forEach(element => {
+container_fluid.forEach(element => {
 const sectionHasFluid = element.closest('section')
 
   if (!sectionHasFluid.classList.contains('first-screen')) {
@@ -36,6 +36,6 @@ btnBox.forEach(item => {
   item.closest('.col-md-6').classList.add('button-group');
 });
 document.getElementById('fileInput').onchange = function(){
- document .getElementById('file-name').innecHTML = this.files[0].name;
+ document .getElementById('file-name').innerHTML = this.files[0].name;
 };
 
