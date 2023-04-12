@@ -92,11 +92,9 @@ a {
 }
 .btn.btn-large {
   padding: 22px 33px;
-  width: 293px;
 }
 .btn.btn-medium {
   padding: 22px 33px;
-  width: 253px;
 }
 
 .container-fluid {
@@ -462,9 +460,10 @@ header .navbar-nav .nav-link:hover {
 
 .advantage {
   text-align: center;
+  margin-bottom: 58px;
 }
 .advantage-img {
-  margin-bottom: 0 auto 22px;
+  margin: 0 auto 22px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -492,6 +491,10 @@ header .navbar-nav .nav-link:hover {
 .advantage-title {
   font-size: 18px;
   line-height: 124.5%;
+}
+
+#slider-advantages {
+  margin: 90px 0 -58px;
 }
 
 footer {
