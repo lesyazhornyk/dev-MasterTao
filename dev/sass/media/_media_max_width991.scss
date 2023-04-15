@@ -31,7 +31,7 @@
     .navbar-collapse {
         display: flex;
         flex-direction: column;
-        background-color: $accest-background;
+        background-color: $assets-background;
         margin: 15px -12px 0;
         .btn {
             margin-bottom: 60px;
@@ -94,39 +94,6 @@
     }
 
 
- .slick-dots {
-    display: flex;
-    padding: 0;
-    justify-content: center;
-    margin: 0;
-    position: absolute;
-    top: calc(100% - 57px);
-    left: 50%;
-    transform: translateX(-50%);
-
-    li {
-        margin: 0 13px;
-        list-style: none;
-        font-size: 8px;
-        line-height: 8px;
-        
-        &.slick-active,
-        &:hover {
-         button {
-         background: #fff;
-            }
-        }
-    }
-    button {
-        border: 2px solid #fff;
-        background: transparent;
-        font-size: 0;
-        height: 8px;
-        width: 8px;
-        border-radius: 50%;
-        transition: .3s;
-     }  
- }
  .form-calculation {
     padding: 52px 30px 34px;
  }
@@ -137,6 +104,41 @@
  .calculation-row .img-box {
     display: none;
   }
+  .advantage-img {
+    margin: 10px auto 22px;
+  }
+
+  .template-title,
+  .template-subtitle,
+  .template-title-left {
+   font-weight: 700;
+    text-align: center;
+    margin-bottom: $title-margin - 12px;
+    h2 {
+        font-size: 24px;
+        line-height: 124.5%;
+    }
+}
+.after-inline {
+
+    h2:after {
+        margin: 0 0 10px 20px;
+        content: "";
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, 0);
+        bottom: -19px;
+        height: 2px;
+        width: 85px;
+        display: block;
+    }
+}
+
+section > .container-fluid:not(.banner) {
+        border-radius: 0px;
+        padding: 55px 20px 60px;
+        }
+
 }
 
 

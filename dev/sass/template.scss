@@ -32,12 +32,13 @@ a{
 
 .btn{
     font-weight: 600;
+    font-size: 15px;
+    padding: 13px 25px;
+    border-radius: 90px;
     &.btn-primary {
         background: $primary-color;
         border-color: $primary-color;
-        font-size: 15px;
-        padding: 13px 25px;
-        border-radius: 90px;
+        
         &:focus {
             box-shadow: none;
         }
@@ -49,9 +50,15 @@ a{
     &.btn-large {
         padding: 22px 33px;
     }
-    &.btn-medium {
-        padding: 22px 33px;
+
+    &.btn-secondary {
+    color: #fff;
+    border-color: $primary-color;
+    background-color: transparent;
+    &:hover {
+        @extend .btn-primary;
     }
+ }
     
 }
 
@@ -65,7 +72,6 @@ a{
 .template-title,
 .template-subtitle {
     line-height: 125%;
-    
     text-align: center;
 }
 
@@ -232,9 +238,50 @@ input {
 .button-group {
     padding-top: 19px;
 }
+section {
+    padding: $section-padding;
+     > .container-fluid:not(.banner) {
+        background: #363A4D;
+        border-radius: 20px;
+        padding: 90px 50px 110px;
+        }
+}
 
- section > .container-fluid:not(.banner) {
- background: #363A4D;
- border-radius: 20px;
- padding: 90px 50px 110px;
+.slick-dots {
+    display: flex;
+    padding: 0;
+    justify-content: center;
+    margin: 0;
+    position: absolute;
+    top: calc(100% - 57px);
+    left: 50%;
+    transform: translateX(-50%);
+
+    li {
+        margin: 0 13px;
+        list-style: none;
+        font-size: 8px;
+        line-height: 8px;
+        
+        &.slick-active,
+        &:hover {
+         button {
+         background: #fff;
+            }
+        }
+    }
+    button {
+        border: 2px solid #fff;
+        background: transparent;
+        font-size: 0;
+        height: 8px;
+        width: 8px;
+        border-radius: 50%;
+        transition: .3s;
+     }  
  }
+
+
+.advantages, .delivery {
+    margin-bottom: 100px;
+}
