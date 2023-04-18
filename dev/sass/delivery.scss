@@ -14,10 +14,11 @@ section.delivery {
 		position: absolute;
 		top: 50%;
 		transform: translate(0, -50%);
+		
 
 		&.slick-prev {
 		left: 0;
-		transform: translate(0, -50%) rotate(180deg);
+		transform: translate(0, -50%) rotate(180deg); 
 		}
 
 		&.slick-next{

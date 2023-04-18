@@ -29,7 +29,7 @@ x.addListener(adopContainer); // Attach listener function on state changes
 $(document).ready(function () {
 	$(".banner").slick({
 		dots: true,
-		arrow: true,
+		arrows: true,
 		appendArrows: ".banner-nav",
 		responsive: [
 			{
@@ -89,8 +89,8 @@ $(document).ready(function () {
 				breakpoint: 1131,
 				settings: {
 					slidesToShow: 1,
-          dots: true,
-          arrow: false,
+                    dots: true,
+					arrows: false,
 				}
 			},
 		
