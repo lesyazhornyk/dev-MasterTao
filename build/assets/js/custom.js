@@ -36,7 +36,6 @@ $(document).ready(function () {
 				breakpoint: 991,
 				settings: {
 					arrows: false,
-			
 				},
 			},
 		],
@@ -82,22 +81,21 @@ $(document).ready(function () {
 				settings: {
 					slidesToShow: 2,
 					infinite: true,
-				
-				}
+				},
 			},
 			{
 				breakpoint: 1131,
 				settings: {
 					slidesToShow: 1,
-                    dots: true,
+					dots: true,
 					arrows: false,
-				}
+				},
 			},
-		
+
 			// You can unslick at a given breakpoint now by adding:
 			// settings: "unslick"
 			// instead of a settings object
-		]
+		],
 	});
 });
 
@@ -110,44 +108,52 @@ document.getElementById("fileInput").onchange = function () {
 	document.getElementById("file-name").innerHTML = this.files[0].name;
 };
 
-const observer = new IntersectionObserver(entries => {
-	entries.forEach(entry => {
-	  const title = entry.target.querySelector('h2');
-  
-	  if (entry.isIntersecting) {
-		title.classList.add('animate__animated');
-		title.classList.add('animate__fadeInUp');
-		return; // if we added the class, exit the function
-	  }
-  
-	  // We're not intersecting, so remove the class!
-	  title.classList.remove('animate__animated');
-	  title.classList.remove('animate__fadeInUp');
-	});
-  });
-  
-  const titles = document.querySelectorAll('.template-title');
-  titles.forEach(entry => {
-	observer.observe(entry);
-  });
+const observer = new IntersectionObserver((entries) => {
+	entries.forEach((entry) => {
+		const title = entry.target.querySelector("h2");
 
-  const observerLeft = new IntersectionObserver(entries => {
-	entries.forEach(entry => {
-	  const title = entry.target.querySelector('h2');
-  
-	  if (entry.isIntersecting) {
-		title.classList.add('animate__animated');
-		title.classList.add('animate__fadeInTopLeft');
-		return; // if we added the class, exit the function
-	  }
-  
-	  // We're not intersecting, so remove the class!
-	  title.classList.remove('animate__animated');
-	  title.classList.remove('animate__fadeInTopLeft');
+		if (entry.isIntersecting) {
+			title.classList.add("animate__animated");
+			title.classList.add("animate__fadeInUp");
+			return; // if we added the class, exit the function
+		}
+
+		// We're not intersecting, so remove the class!
+		title.classList.remove("animate__animated");
+		title.classList.remove("animate__fadeInUp");
 	});
-  });
-  
-  const titlesLeft = document.querySelectorAll('.template-title-left');
-  titlesLeft.forEach(entry => {
+});
+
+const titles = document.querySelectorAll(".template-title");
+titles.forEach((entry) => {
+	observer.observe(entry);
+});
+
+const observerLeft = new IntersectionObserver((entries) => {
+	entries.forEach((entry) => {
+		const title = entry.target.querySelector("h2");
+
+		if (entry.isIntersecting) {
+			title.classList.add("animate__animated");
+			title.classList.add("animate__fadeInTopLeft");
+			return; // if we added the class, exit the function
+		}
+
+		// We're not intersecting, so remove the class!
+		title.classList.remove("animate__animated");
+		title.classList.remove("animate__fadeInTopLeft");
+	});
+});
+
+const titlesLeft = document.querySelectorAll(".template-title-left");
+titlesLeft.forEach((entry) => {
 	observerLeft.observe(entry);
-  });
+});
+
+const accordionItems = document.querySelectorAll(".acordion-item");
+
+accordionItems.forEach((item) => {
+	item.addEventListener("click", (event) => {
+		item.classList.toggle("active");
+	});
+});
